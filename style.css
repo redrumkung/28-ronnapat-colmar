@@ -1,3 +1,93 @@
-h1 {
-    color: dodgerblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+
+  .mobile {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 32px;
+    }
+
+    h4 {
+      color: #4a4a4a;
+      span {
+        color: #9f9f9f;
+      }
+    }
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    li {
+      a {
+        text-decoration: none;
+        color: #4a4a4a;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    /* justify-content: flex-start; */
+
+    .logo {
+      display: none;
+    }
+    nav ul {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+      padding: 0 8px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  padding: 32px 24px;
+  align-items: center;
+  background-color: #d8d8d8;
+
+  .heroLeft {
+    max-width: 60%;
+  }
+
+  .heroRight {
+    padding-left: 24px;
+  }
+  
 }
