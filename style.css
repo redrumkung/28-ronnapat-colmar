@@ -378,6 +378,49 @@ header {
       .thesisLeft {
         width: 100%;
         padding: 0;
+        
+        h4,p {
+          display: none;
+        }
+      }
+      .thesisRight {
+        display: none;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  border-top: solid 1px rgb(128, 132, 135, 0.2);
+
+  .container {
+    width: 100%;
+    padding: 16px 24px 60px 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerLinks {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: slategray;
+      padding: 0 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    border: none;
+
+    .container {
+      padding: 16px 16px;
+
+      .footerLinks {
+        display: none;
       }
     }
   }
